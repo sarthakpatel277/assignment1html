@@ -1,182 +1,41 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login page</title>
-    <style type=text/css>
-    img{
-      width:200px;
-      
-      padding:10px;
-      margin-left:0px;
-      
-     
-    }
-    a:link{
-      color: white;
-      text-decoration: none;
-      
-    }
-  
-    #btn{
-        color: white;
-        border-radius: 10px;
-       padding-left: 50px;
-       padding-right: 50px;
-       padding-top:10px ;
-       padding-bottom:10px;
-       background-color: red;
-       border-color: red;
-    }
-    .logindetails{
-      background-color: white;
-      width: 600px;
-      
-      border-radius: 20px;
-      margin-top: 20px;
-      margin-left: 100px;
-      padding: 50px;
-      border-radius: 10px;
-      
-    }
-   
-    body{
-      
-      background-color:#F9F9F9;
-      display: flex;
-      margin-top: 100px;
-    }
-    #name,#password{
-      width: 350px;
-      height: 32px;
-      margin-top: 15px;
-      border-radius: 10px;
-      color: black;
-      background-color: white;
-      box-shadow: inset;
-      border-width: 1px;
-    }
-    #img{
-       border-radius: 50%;
-       height: 500px;
-       width: 500px;
-       margin-left: 100px;
-    }
-
-    #textbutton{
-      border: none;
-      background-color: inherit;
-      color: red;
-    }
-    #textbutton:hover{
-      background-color: #eee;
-    }
-
-    .lastline{
-      float: left;
-      
-    }
-    #text1{
-      font-size: 20px;
-      font-family: sans-serif;
-    }
-
-    #text2{
-      font-size: 15px;
-      font-family: sans-serif;
-    }
-
-    #cricleimage > img{
-     
-      border: 20px solid white ;
-      
-    }
-    
-    </style>
-</head>
-<body>
-   <div id="cricleimage">
-   <img src="images/hero-image.png" alt="lodaing image" id="img">
-</div>
-   <div class="logindetails">
-    
-    <div>
-      <img src="images/header-logo.svg" alt="">
-      <h1>
-        
-<pre>We Are <b style="color: red;">experts</b> in business,
-marketing,growth,&sales.</pre></h1></div>
- <p id="text1">Login into your account</p>
- 
- <div class="textfield">
- <input type="email" placeholder="    Username" id="name">
-<br> <input type="password" placeholder="    password" id="password"></br>
-</div>
-
-<table>
-<tr>
- <td><button id="btn">
-  <a href="/C:\Users\tatva\Documents\web login\dashboard.html" >Login</a>
-
-</button>
-<td> <p>Forget password</p> </td>
-</tr>
-</table>
-
-<table>
-  <tr>
- <td> <h6 id="text2">Are you a new member?</h6></td>
- <td><button id="textbutton">Register here</button></td>
-</tr>
-</table>
-
-
-
-</div>  
- 
-</div>
-    
-</body>
-</html> -->
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="dashboard.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
+
 <body>
     <div class="container">
-    <div class="row">
-        <div class="col-md-6">
+        <div class="d-flex justify-content-between  align-items-start">
+            <div class="left">
+                <img src="images/hero-image.png" class="hero-image" alt="hero image">
+            </div>
+            <div class="right">
+                <div class="d-flex  flex-column">
+                    <img class="header-logo" src="images/header-logo.svg" alt="favicon">
+                    <p class="header-description">We are<strong class="red"> experts</strong> in bussiness, marketing, growth and sales.</p>
+                    <p class="login-text">Login into your account</p>
+                    <form action="" class="login-form">
+                        <input type="text" class="input-box" placeholder="username" />
+                        <input type="password" class="input-box" placeholder="password" />
+                        <div class="d-flex align-items-center ">
+                            <input type="submit" value="Login"></input>
+                            <a href="#">Forgot password?</a>
+                        </div>
+                    </form>
+                    <p class="register-text">Are you a new member? <a href="#">Register here</a></p>
 
-    <img src="Images\hero-image.png" alt="hero-img" id="img1">
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="col-md-6">
-
-        <img src="Images\logo.svg" alt="hero-img" id="img2">
-        <div class="txt"> We are <strong id="exp">expert</strong> in business, marketing, growth, & sales.</div>
-        <div class="login">Login into your account</div>
-        <div class="box1"> <h5 id="user">Username</h5></div>
-        <div class="box2"><h5 id="pass">Password</h5></div>
-        <div class="log"><p id="log2">Login</p></div>
-        <div class="fpass"><p>Forgot Password?</p></div>
-        <div class="new"><p id="new1">Are you a new Member?</p></div>
-        <div class="reg"><p id="reg1">Resister here</p></div>
-
-    </div>
-
-
-    </div>
-    
 </body>
+
 </html>
+
